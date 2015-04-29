@@ -96,8 +96,6 @@ lcd_goto(0,0);
 lcd_print(strBuff);
 
 lcd_goto(1,0);
-
-lcd_goto(1,0);
 sprintf(strBuff,"%02u:%02u:%02u",timehrs,timemin,timesec);
 lcd_print(strBuff);
 }

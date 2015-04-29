@@ -5,22 +5,19 @@
 // 2015 Copyleft
 
 
-// define LCD lines connected to MCU's pins (can be used any pins)
-
 // LCD line RW connected to Vss (ground)
 
-// LCD line RS connected to RD6 pin
+// LCD line RS
 #define RS_PIN  TRISD4=0
 #define RS_H    RD4=1
 #define RS_L    RD4=0
 
-// LCD line E connected to RD7 pin
+// LCD line E
 #define EN_PIN  TRISD5=0
 #define EN_H    RD5=1
 #define EN_L    RD5=0
 
 // LCD data bus (4-bit interface)
-// data line 4..7 connected to RB0..RB3 pins
 #define D4_PIN  TRISD6=0
 #define D4_H    RD6=1
 #define D4_L    RD6=0
@@ -37,7 +34,7 @@
 #define D7_H    RB1=1
 #define D7_L    RB1=0
 
-// LCD backlight line connected to RD5 pin
+// LCD backlight line
 #define BL_PIN  TRISC7=0
 #define BL_ON   RC7=1
 #define BL_OFF  RC7=0
